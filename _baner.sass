@@ -1,0 +1,162 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+body
+    width: 100vw
+    overflow-x: hidden
+.main
+    width: 100vw
+    height: 100vh
+    position: relative
+    z-index: 1
+    color: #ddd
+    background-color: #333
+    .background
+        z-index: 0
+        width: 100vw
+        height: 100vh
+        display: flex
+        position: relative
+        overflow: hidden
+        .item
+            height: 100%
+            position: absolute
+        .st
+            left: 0
+            width: 65%
+            background-color: #222
+            animation: transformLeftTile 3s linear
+        .nd
+            right: 0
+            width: 35%
+            background-color: #00C896
+            animation: transformRightTile 2s 1s ease-out both
+    .banerArrow
+        width: 50px
+        height: 100px
+        +arrows(#ddd)
+    .photo
+        z-index: 1
+        position: absolute
+        right: 10%
+        bottom: 0
+        background-position: center
+        width: 50%
+        height: 80%
+        background-image: url(photo.png)
+        background-size: contain
+        background-repeat: no-repeat
+        animation: showPhoto 2s ease-in both
+    button
+        position: absolute
+        bottom: 25%
+        left: 5%
+        text-transform: uppercase
+        color: #00C896
+        font-size: 16px
+        line-height: 50px
+        background: transparent
+        border: 2px solid #00C896
+        border-radius: 10px
+        width: 200px
+        height: 50px
+        font-weight: 600
+        animation: buttonShow 2s 1s ease-out both
+    .text
+        text-transform: uppercase
+        width: 50%
+        top: 45%
+        transform: translateY(-50%)
+        left: 5%
+        position: absolute
+        color: #ddd
+        font-family: 'Titillium Web', sans-serif
+        h1
+            color: #00C896
+            font-weight: 900
+            letter-spacing: 4px
+            animation: textAnimation .5s linear
+            font-size: 50px
+        h2
+            margin-top: -20px
+            font-size: 2vw
+            font-weight: 300
+            animation: textAnimation .5s .2s linear both
+        h3
+            text-transform: capitalize
+            letter-spacing: 1px
+            font-size: 3vw
+            font-weight: 300
+            margin-bottom: -30px
+            animation: textAnimation .5s .4s linear both
+
+@media ( orientation: portrait)
+    .main
+
+        .background
+            .st
+                width: 70%
+            .nd
+                width: 30%
+
+        .text
+            top: 40%
+            h1
+                font-size: 30px
+                line-height: 30px
+            h2
+                margin-top: 5px
+                font-size: 10px
+            h3
+                font-size: 20px
+                margin-bottom: 0
+        button
+            bottom: 40%
+            width: 120px
+            height: 40px
+            line-height: 40px
+        .photo
+            right: 0
+            height: 40%
+            width: 60%
+
+@media ( min-width: 600px) and (max-width: 700px)
+    .main
+        .text
+            width: 60%
+            h1
+                font-size: 28px
+            h2
+                margin-top: 0px
+                font-size: 15px
+            h3
+                font-size: 25px
+                margin-bottom: -5px
+        .photo
+            bottom: -30px
+@media ( min-width: 701px) and (max-width: 800px)
+    .main
+        .text
+            width: 70%
+            h1
+                font-size: 30px
+            h2
+                margin-top: -5px
+                font-size: 15px
+            h3
+                font-size: 25px
+                margin-bottom: -10px
+
+@media ( min-width: 801px) and (max-width: 1020px)
+    .main
+        .text
+            width: 70%
+            h1
+                font-size: 35px
+            h2
+                margin-top: -5px
+                font-size: 15px
+            h3
+                font-size: 25px
+                margin-bottom: -10px

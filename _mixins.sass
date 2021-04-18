@@ -1,0 +1,33 @@
+=arrows($color)
+    width: 56px
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    animation: jumpingArrow 1s infinite linear
+    z-index: 10000
+    cursor: pointer
+
+    &::after
+        content: ""
+        right: 0
+        bottom: 40px
+        width: 35px
+        height: 7px
+        background: $color
+        position: absolute
+        z-index: 4
+        border-radius: 20px
+        transform: rotate(-45deg)
+    &::before
+        content: ""
+        left: 0
+        bottom: 40px
+        width: 35px
+        height: 7px
+        background: $color
+        position: absolute
+        z-index: 4
+        border-radius: 20px
+        transform: rotate(45deg)
