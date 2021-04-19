@@ -32,6 +32,7 @@ body
             width: 35%
             background-color: #00C896
             animation: transformRightTile 2s 1s ease-out both
+
     .banerArrow
         width: 50px
         height: 100px
@@ -62,7 +63,12 @@ body
         width: 200px
         height: 50px
         font-weight: 600
-        animation: buttonShow 2s 1s ease-out both
+        animation: elementShow 2s 1s ease-out both
+        cursor: pointer
+        outline: none
+        transition: transform .5s
+    button:hover
+        transform: scale(1.1)
     .text
         text-transform: uppercase
         width: 50%
