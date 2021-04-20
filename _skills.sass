@@ -1,5 +1,5 @@
 .active
-    animation: iconsAnimation .5s linear both
+    animation: iconsAnimation .6s linear both
 .activeH1
     animation: elementShow 1s 1s linear both
 .skills::after
@@ -18,6 +18,7 @@
     background-image: url(js.jpg)
     background-attachment: fixed
     z-index: 1
+
     .skillsArrow
         width: 50px
         height: 100px
@@ -46,34 +47,85 @@
         max-height: 100vh
         position: relative
         align-self: center
+        text-align: center
 
         .fa-js
-            color: #ffd500
-            opacity: 0
+            color: rgb(255, 213, 0)
+            display: block
+            position: relative
+            transition: .5s
+        .fa-js::after
+            animation: iconDescribeAnimation .2s linear both
+        .fa-js:hover
+            color: rgba(255, 213, 0, .2)
+        .fa-js:hover::after
+            +itemDescribe("JavaScript")
+
         .fa-html5
-            color: #FF6700
-            opacity: 0
+            color: rgb(255, 103, 0)
             animation-delay: .1s
+            transition: .5s
+        .fa-html5::after
+            animation: iconDescribeAnimation .2s linear both
+        .fa-html5:hover
+            color: rgba(255, 103, 0, .2)
+        .fa-html5:hover::after
+            +itemDescribe("HTML5")
+
         .fa-css3-alt
-            color: #2965f1
-            opacity: 0
+            transition: .5s
+            color: rgb(41, 101, 241)
             animation-delay: .2s
+        .fa-css3-alt::after
+            animation: iconDescribeAnimation .2s linear both
+        .fa-css3-alt:hover
+            color: rgba(41, 101, 241, .2)
+        .fa-css3-alt:hover::after
+            +itemDescribe("CSS3")
+
         .fa-sass
-            color: #cd6799
-            opacity: 0
+            transition: .5s
+            color: rgb(205, 103, 153)
             animation-delay: .3s
+        .fa-sass::after
+            animation: iconDescribeAnimation .2s linear both
+        .fa-sass:hover
+            color: rgba(205, 103, 153, .2 )
+        .fa-sass:hover::after
+            +itemDescribe("SASS")
+
         .fa-bootstrap
-            color: #563d7c
-            opacity: 0
+            transition: .5s
+            color: rgb(86, 61, 124)
             animation-delay: .4s
+        .fa-bootstrap::after
+            animation: iconDescribeAnimation .2s linear both
+        .fa-bootstrap:hover
+            color: rgba(86, 61, 124, .2)
+        .fa-bootstrap:hover::after
+            +itemDescribe("Bootstrap")
+
         .fa-git-alt
-            color: #f15d2f
-            opacity: 0
+            transition: .5s
+            color: rgb(241, 93, 47)
             animation-delay: .5s
+        .fa-git-alt::after
+            animation: iconDescribeAnimation .2s linear both
+        .fa-git-alt:hover
+            color: rgba(241, 93, 47, .2)
+        .fa-git-alt:hover::after
+            +itemDescribe("GIT")
+
         .fa-github
-            color: #fff
-            opacity: 0
+            transition: .5s
+            color: rgb(255, 255, 255)
             animation-delay: .6s
+        .fa-github::after
+            animation: iconDescribeAnimation .2s linear both
+        .fa-github:hover
+            color: rgba(255, 255, 255, .2)
+        .fa-github:hover::after
+            +itemDescribe("GitHub")
         i
             display: flex
             justify-content: center
@@ -81,7 +133,7 @@
     .skills
         .skillsH1
             margin-top: 50px
-            font-size: 50px
+            font-size: 45px
         .icons
             top: 55%
             i

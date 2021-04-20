@@ -152,6 +152,22 @@
             transform: translateY(0);
     opacity: 1; } }
 
+@-webkit-keyframes iconDescribeAnimation {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes iconDescribeAnimation {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
 * {
   padding: 0;
   margin: 0;
@@ -365,8 +381,8 @@ body {
       margin-bottom: -10px; } }
 
 .active {
-  -webkit-animation: iconsAnimation .5s linear both;
-          animation: iconsAnimation .5s linear both; }
+  -webkit-animation: iconsAnimation .6s linear both;
+          animation: iconsAnimation .6s linear both; }
 
 .activeH1 {
   -webkit-animation: elementShow 1s 1s linear both;
@@ -460,40 +476,162 @@ body {
     max-height: 100vh;
     position: relative;
     -ms-flex-item-align: center;
-        align-self: center; }
+        align-self: center;
+    text-align: center; }
     .skills .icons .fa-js {
       color: #ffd500;
-      opacity: 0; }
+      display: block;
+      position: relative;
+      -webkit-transition: .5s;
+      transition: .5s; }
+    .skills .icons .fa-js::after {
+      -webkit-animation: iconDescribeAnimation .2s linear both;
+              animation: iconDescribeAnimation .2s linear both; }
+    .skills .icons .fa-js:hover {
+      color: rgba(255, 213, 0, 0.2); }
+    .skills .icons .fa-js:hover::after {
+      content: "JavaScript";
+      font-size: 35px;
+      color: #fff;
+      position: absolute;
+      line-height: 100px;
+      left: -15%;
+      text-align: center;
+      width: 130%;
+      height: 100%;
+      font-family: 'Titillium Web', sans-serif; }
     .skills .icons .fa-html5 {
-      color: #FF6700;
-      opacity: 0;
+      color: #ff6700;
       -webkit-animation-delay: .1s;
-              animation-delay: .1s; }
+              animation-delay: .1s;
+      -webkit-transition: .5s;
+      transition: .5s; }
+    .skills .icons .fa-html5::after {
+      -webkit-animation: iconDescribeAnimation .2s linear both;
+              animation: iconDescribeAnimation .2s linear both; }
+    .skills .icons .fa-html5:hover {
+      color: rgba(255, 103, 0, 0.2); }
+    .skills .icons .fa-html5:hover::after {
+      content: "HTML5";
+      font-size: 35px;
+      color: #fff;
+      position: absolute;
+      line-height: 100px;
+      left: -15%;
+      text-align: center;
+      width: 130%;
+      height: 100%;
+      font-family: 'Titillium Web', sans-serif; }
     .skills .icons .fa-css3-alt {
+      -webkit-transition: .5s;
+      transition: .5s;
       color: #2965f1;
-      opacity: 0;
       -webkit-animation-delay: .2s;
               animation-delay: .2s; }
+    .skills .icons .fa-css3-alt::after {
+      -webkit-animation: iconDescribeAnimation .2s linear both;
+              animation: iconDescribeAnimation .2s linear both; }
+    .skills .icons .fa-css3-alt:hover {
+      color: rgba(41, 101, 241, 0.2); }
+    .skills .icons .fa-css3-alt:hover::after {
+      content: "CSS3";
+      font-size: 35px;
+      color: #fff;
+      position: absolute;
+      line-height: 100px;
+      left: -15%;
+      text-align: center;
+      width: 130%;
+      height: 100%;
+      font-family: 'Titillium Web', sans-serif; }
     .skills .icons .fa-sass {
+      -webkit-transition: .5s;
+      transition: .5s;
       color: #cd6799;
-      opacity: 0;
       -webkit-animation-delay: .3s;
               animation-delay: .3s; }
+    .skills .icons .fa-sass::after {
+      -webkit-animation: iconDescribeAnimation .2s linear both;
+              animation: iconDescribeAnimation .2s linear both; }
+    .skills .icons .fa-sass:hover {
+      color: rgba(205, 103, 153, 0.2); }
+    .skills .icons .fa-sass:hover::after {
+      content: "SASS";
+      font-size: 35px;
+      color: #fff;
+      position: absolute;
+      line-height: 100px;
+      left: -15%;
+      text-align: center;
+      width: 130%;
+      height: 100%;
+      font-family: 'Titillium Web', sans-serif; }
     .skills .icons .fa-bootstrap {
+      -webkit-transition: .5s;
+      transition: .5s;
       color: #563d7c;
-      opacity: 0;
       -webkit-animation-delay: .4s;
               animation-delay: .4s; }
+    .skills .icons .fa-bootstrap::after {
+      -webkit-animation: iconDescribeAnimation .2s linear both;
+              animation: iconDescribeAnimation .2s linear both; }
+    .skills .icons .fa-bootstrap:hover {
+      color: rgba(86, 61, 124, 0.2); }
+    .skills .icons .fa-bootstrap:hover::after {
+      content: "Bootstrap";
+      font-size: 35px;
+      color: #fff;
+      position: absolute;
+      line-height: 100px;
+      left: -15%;
+      text-align: center;
+      width: 130%;
+      height: 100%;
+      font-family: 'Titillium Web', sans-serif; }
     .skills .icons .fa-git-alt {
+      -webkit-transition: .5s;
+      transition: .5s;
       color: #f15d2f;
-      opacity: 0;
       -webkit-animation-delay: .5s;
               animation-delay: .5s; }
-    .skills .icons .fa-github {
+    .skills .icons .fa-git-alt::after {
+      -webkit-animation: iconDescribeAnimation .2s linear both;
+              animation: iconDescribeAnimation .2s linear both; }
+    .skills .icons .fa-git-alt:hover {
+      color: rgba(241, 93, 47, 0.2); }
+    .skills .icons .fa-git-alt:hover::after {
+      content: "GIT";
+      font-size: 35px;
       color: #fff;
-      opacity: 0;
+      position: absolute;
+      line-height: 100px;
+      left: -15%;
+      text-align: center;
+      width: 130%;
+      height: 100%;
+      font-family: 'Titillium Web', sans-serif; }
+    .skills .icons .fa-github {
+      -webkit-transition: .5s;
+      transition: .5s;
+      color: white;
       -webkit-animation-delay: .6s;
               animation-delay: .6s; }
+    .skills .icons .fa-github::after {
+      -webkit-animation: iconDescribeAnimation .2s linear both;
+              animation: iconDescribeAnimation .2s linear both; }
+    .skills .icons .fa-github:hover {
+      color: rgba(255, 255, 255, 0.2); }
+    .skills .icons .fa-github:hover::after {
+      content: "GitHub";
+      font-size: 35px;
+      color: #fff;
+      position: absolute;
+      line-height: 100px;
+      left: -15%;
+      text-align: center;
+      width: 130%;
+      height: 100%;
+      font-family: 'Titillium Web', sans-serif; }
     .skills .icons i {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -505,7 +643,7 @@ body {
 @media (orientation: portrait) {
   .skills .skillsH1 {
     margin-top: 50px;
-    font-size: 50px; }
+    font-size: 45px; }
   .skills .icons {
     top: 55%; }
     .skills .icons i {
@@ -531,5 +669,6 @@ body {
 
 .describe {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  background: #4E4E4E; }
 /*# sourceMappingURL=style.css.map */
