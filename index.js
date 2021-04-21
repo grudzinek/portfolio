@@ -24,7 +24,7 @@ $(".skillsArrow").on("click", function() {
 
 $(window).on("scroll", function () {
 
-if($(window).scrollTop() > skillsPosition.top - 250){
+if($(window).scrollTop() > skillsPosition.top - 350){
     $(".fab").addClass("active");
     $(".skillsH1").addClass("activeH1");
 }

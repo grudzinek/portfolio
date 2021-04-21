@@ -36,7 +36,7 @@
         opacity: 0
     .icons
         z-index: 3
-        width: 80vw
+        width: 90vw
         top: 50%
         transform: translateY(-50%)
         position: absolute
@@ -54,101 +54,89 @@
             display: block
             position: relative
             transition: .5s
-        .fa-js::after
-            animation: iconDescribeAnimation .2s linear both
-        .fa-js:hover
-            color: rgba(255, 213, 0, .2)
-        .fa-js:hover::after
-            +itemDescribe("JavaScript")
 
         .fa-html5
             color: rgb(255, 103, 0)
             animation-delay: .1s
             transition: .5s
-        .fa-html5::after
-            animation: iconDescribeAnimation .2s linear both
-        .fa-html5:hover
-            color: rgba(255, 103, 0, .2)
-        .fa-html5:hover::after
-            +itemDescribe("HTML5")
 
         .fa-css3-alt
             transition: .5s
             color: rgb(41, 101, 241)
             animation-delay: .2s
-        .fa-css3-alt::after
-            animation: iconDescribeAnimation .2s linear both
-        .fa-css3-alt:hover
-            color: rgba(41, 101, 241, .2)
-        .fa-css3-alt:hover::after
-            +itemDescribe("CSS3")
 
         .fa-sass
             transition: .5s
             color: rgb(205, 103, 153)
             animation-delay: .3s
-        .fa-sass::after
-            animation: iconDescribeAnimation .2s linear both
-        .fa-sass:hover
-            color: rgba(205, 103, 153, .2 )
-        .fa-sass:hover::after
-            +itemDescribe("SASS")
 
         .fa-bootstrap
             transition: .5s
             color: rgb(86, 61, 124)
             animation-delay: .4s
-        .fa-bootstrap::after
-            animation: iconDescribeAnimation .2s linear both
-        .fa-bootstrap:hover
-            color: rgba(86, 61, 124, .2)
-        .fa-bootstrap:hover::after
-            +itemDescribe("Bootstrap")
 
         .fa-git-alt
             transition: .5s
             color: rgb(241, 93, 47)
             animation-delay: .5s
-        .fa-git-alt::after
-            animation: iconDescribeAnimation .2s linear both
-        .fa-git-alt:hover
-            color: rgba(241, 93, 47, .2)
-        .fa-git-alt:hover::after
-            +itemDescribe("GIT")
 
         .fa-github
             transition: .5s
             color: rgb(255, 255, 255)
             animation-delay: .6s
-        .fa-github::after
-            animation: iconDescribeAnimation .2s linear both
-        .fa-github:hover
-            color: rgba(255, 255, 255, .2)
-        .fa-github:hover::after
-            +itemDescribe("GitHub")
+
         i
             display: flex
             justify-content: center
 @media (orientation: portrait)
     .skills
         .skillsH1
-            margin-top: 50px
+            margin-top: 20px
             font-size: 45px
         .icons
-            top: 55%
+            font-size: 70px
+            height: 70%
             i
                 flex-basis: 50%
                 height: 28%
 
-@media ( min-width: 600px )
+            .fa-js::after
+                +itemDescribeMobile("JavaScript")
+            .fa-html5::after
+                +itemDescribeMobile("HTML5")
+            .fa-css3-alt::after
+                +itemDescribeMobile("CSS3")
+            .fa-sass::after
+                +itemDescribeMobile("SASS")
+            .fa-bootstrap::after
+                +itemDescribeMobile("Bootstrap")
+            .fa-git-alt::after
+                +itemDescribeMobile("GIT")
+            .fa-github::after
+                +itemDescribeMobile("GitHub")
+@media ( min-width: 600px ) and (max-width: 999px)
     .skills
         .skillsH1
             margin-top: 15px
         .icons
             top: 58%
+            height: 70%
             i
                 flex-basis: 25%
-
+            .fa-js::after
+                +itemDescribeMobile("JavaScript")
+            .fa-html5::after
+                +itemDescribeMobile("HTML5")
+            .fa-css3-alt::after
+                +itemDescribeMobile("CSS3")
+            .fa-sass::after
+                +itemDescribeMobile("SASS")
+            .fa-bootstrap::after
+                +itemDescribeMobile("Bootstrap")
+            .fa-git-alt::after
+                +itemDescribeMobile("GIT")
+            .fa-github::after
+                +itemDescribeMobile("GitHub")
 @media ( min-width: 1000px )
     .skills
         .skillsH1
@@ -156,3 +144,59 @@
         .icons
             i
                 flex-basis: 10%
+
+            .fa-js::after
+                animation: iconDescribeAnimation .2s linear both
+            .fa-js:hover
+                color: rgba(255, 213, 0, .2)
+            .fa-js:hover::after
+                +itemDescribe("JavaScript")
+
+            .fa-html5::after
+                animation: iconDescribeAnimation .2s linear both
+            .fa-html5:hover
+                color: rgba(255, 103, 0, .2)
+            .fa-html5:hover::after
+                +itemDescribe("HTML5")
+
+            .fa-css3-alt::after
+                animation: iconDescribeAnimation .2s linear both
+            .fa-css3-alt:hover
+                color: rgba(41, 101, 241, .2)
+            .fa-css3-alt:hover::after
+                +itemDescribe("CSS3")
+
+            .fa-sass::after
+                animation: iconDescribeAnimation .2s linear both
+            .fa-sass:hover
+                color: rgba(205, 103, 153, .2 )
+            .fa-sass:hover::after
+                +itemDescribe("SASS")
+
+            .fa-sass::after
+                animation: iconDescribeAnimation .2s linear both
+            .fa-sass:hover
+                color: rgba(205, 103, 153, .2 )
+            .fa-sass:hover::after
+                +itemDescribe("SASS")
+
+            .fa-bootstrap::after
+                animation: iconDescribeAnimation .2s linear both
+            .fa-bootstrap:hover
+                color: rgba(86, 61, 124, .2)
+            .fa-bootstrap:hover::after
+                +itemDescribe("Bootstrap")
+
+            .fa-git-alt::after
+                animation: iconDescribeAnimation .2s linear both
+            .fa-git-alt:hover
+                color: rgba(241, 93, 47, .2)
+            .fa-git-alt:hover::after
+                +itemDescribe("GIT")
+
+            .fa-github::after
+                animation: iconDescribeAnimation .2s linear both
+            .fa-github:hover
+                color: rgba(255, 255, 255, .2)
+            .fa-github:hover::after
+                +itemDescribe("GitHub")
