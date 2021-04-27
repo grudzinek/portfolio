@@ -480,7 +480,6 @@ body {
     text-align: center; }
     .skills .icons .fa-js {
       color: #ffd500;
-      display: block;
       position: relative;
       -webkit-transition: .5s;
       transition: .5s; }
@@ -489,37 +488,43 @@ body {
       -webkit-animation-delay: .1s;
               animation-delay: .1s;
       -webkit-transition: .5s;
-      transition: .5s; }
+      transition: .5s;
+      position: relative; }
     .skills .icons .fa-css3-alt {
       -webkit-transition: .5s;
       transition: .5s;
       color: #2965f1;
       -webkit-animation-delay: .2s;
-              animation-delay: .2s; }
+              animation-delay: .2s;
+      position: relative; }
     .skills .icons .fa-sass {
       -webkit-transition: .5s;
       transition: .5s;
       color: #cd6799;
       -webkit-animation-delay: .3s;
-              animation-delay: .3s; }
+              animation-delay: .3s;
+      position: relative; }
     .skills .icons .fa-bootstrap {
       -webkit-transition: .5s;
       transition: .5s;
       color: #563d7c;
       -webkit-animation-delay: .4s;
-              animation-delay: .4s; }
+              animation-delay: .4s;
+      position: relative; }
     .skills .icons .fa-git-alt {
       -webkit-transition: .5s;
       transition: .5s;
       color: #f15d2f;
       -webkit-animation-delay: .5s;
-              animation-delay: .5s; }
+              animation-delay: .5s;
+      position: relative; }
     .skills .icons .fa-github {
       -webkit-transition: .5s;
       transition: .5s;
       color: white;
       -webkit-animation-delay: .6s;
-              animation-delay: .6s; }
+              animation-delay: .6s;
+      position: relative; }
     .skills .icons i {
       display: -webkit-box;
       display: -ms-flexbox;

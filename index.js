@@ -2,12 +2,12 @@ const baner = document.querySelector(".baner");
 const languages = document.querySelector(".languages");
 const skills = document.querySelector(".skills");
 const items = document.querySelectorAll(".item");
-const describe = document.querySelector(".describe");
+const contact = document.querySelector(".contact");
 const fab = document.querySelectorAll(".fab");
 
 let skillsPosition = skills.getBoundingClientRect();
 
-let describePosition = describe.getBoundingClientRect();
+let describePosition = contact.getBoundingClientRect();
 
 $(".banerArrow").on("click", function() {
     $("body, html").animate({
@@ -24,7 +24,7 @@ $(".skillsArrow").on("click", function() {
 
 $(window).on("scroll", function () {
 
-if($(window).scrollTop() > skillsPosition.top / 3){
+if($(window).scrollTop() > skillsPosition.top){
     $(".fab").addClass("active");
     $(".skillsH1").addClass("activeH1");
 }
