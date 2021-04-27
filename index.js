@@ -7,7 +7,7 @@ const fab = document.querySelectorAll(".fab");
 
 let skillsPosition = skills.getBoundingClientRect();
 
-let describePosition = contact.getBoundingClientRect();
+let contactPosition = contact.getBoundingClientRect();
 
 $(".banerArrow").on("click", function() {
     $("body, html").animate({
@@ -17,7 +17,13 @@ $(".banerArrow").on("click", function() {
 
 $(".skillsArrow").on("click", function() {
     $("body, html").animate({
-        scrollTop: describePosition.top
+        scrollTop: contactPosition.top
+    }, 1000)
+});
+
+$("button").on("click", function() {
+    $("body, html").animate({
+        scrollTop: contactPosition.top
     }, 1000)
 });
 
